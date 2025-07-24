@@ -6,8 +6,9 @@
     <title>А-Академия - Бесплатное IT образование</title>
     <script>
         // Redirect 404s to index.html for SPA routing
-        window.location.replace('/');
+        sessionStorage.redirect = location.href;
     </script>
+    <meta http-equiv="refresh" content="0;URL='./index.html'">
 </head>
 <body>
     <p>Перенаправление...</p>
